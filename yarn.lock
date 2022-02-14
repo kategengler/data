@@ -2364,16 +2364,24 @@
   resolved "https://registry.npmjs.org/@types/cors/-/cors-2.8.10.tgz#61cc8469849e5bcdd0c7044122265c39cec10cf4"
   integrity sha512-C7srjHiVG3Ey1nR6d511dtDkCEjxuN9W1HWAEjGq8kpcwmNM6JJkpC0xvabM7BXTG2wDq8Eu33iH9aQKa7IvLQ==
 
-"@types/ember-qunit@^3.4.13":
-  version "3.4.13"
-  resolved "https://registry.npmjs.org/@types/ember-qunit/-/ember-qunit-3.4.13.tgz#58d359b62a6f6e7039d546f4c08b83ad269f7498"
-  integrity sha512-T7Lq8ppyxueneQgXeo8VsV4OGMeVTMYuzFOc5yUAGZIkUDSi907CdVkCCO4zUqRGl9FkkgCQUxwPiZv+reerGQ==
+"@types/ember-qunit@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@types/ember-qunit/-/ember-qunit-5.0.0.tgz#e39749d129dc7643df13d8df94225867c57d006e"
+  integrity sha512-p7ZZUbohO5E57JsUC6fxD8gveV9LcSnPIx2J86WF7FNLno/2oKvWnI+j5AtobSoy86hfZZaYjiIuW0dNe1eblQ==
   dependencies:
-    "@types/ember" "*"
-    "@types/ember-test-helpers" "*"
+    "@types/ember-resolver" "*"
+    "@types/ember__test" "*"
+    "@types/ember__test-helpers" "*"
     "@types/qunit" "*"
 
-"@types/ember-test-helpers@*", "@types/ember-test-helpers@^1.0.9":
+"@types/ember-resolver@*":
+  version "5.0.11"
+  resolved "https://registry.npmjs.org/@types/ember-resolver/-/ember-resolver-5.0.11.tgz#db931fb5c2d6bda4e29adea132fb48c7ed17aa62"
+  integrity sha512-2BL9d8kBdNUO9Je6KBF7Q34BSwbQG6vzCzTeSopt8FAmLDfaDU9xDDdyZobpfy9GR36mCSeG9b9wr4bgYh/MYw==
+  dependencies:
+    "@types/ember__object" "*"
+
+"@types/ember-test-helpers@^1.0.9":
   version "1.0.9"
   resolved "https://registry.npmjs.org/@types/ember-test-helpers/-/ember-test-helpers-1.0.9.tgz#4279c5f3b390f25fbfb3f9f210785d36a336b8a7"
   integrity sha512-IJyyoUxMnK2fGCSSyvuZP9d7+wirJ0elH/joCPHzWQQyAq413oMJdWhxEMdIxLY+0Z0OsfuvTHIEcUSqjs0m0A==
@@ -2528,14 +2536,15 @@
   resolved "https://registry.npmjs.org/@types/ember__template/-/ember__template-3.16.1.tgz#30d7f50a49b190934db0f5a56dd76ad86c21efc6"
   integrity sha512-APQINizzizl2LHWGMFBCanRjKZQsdzqn7b+us17zbNhnx/R0IZAJq901x/i7eozCRwxsDKmGzNABSCIu6uc1Tg==
 
-"@types/ember__test-helpers@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@types/ember__test-helpers/-/ember__test-helpers-2.0.0.tgz#b4b8323693789670720f55a51b1f8e6cd6bfbe29"
-  integrity sha512-2FyfVCb0W2OJ2OeZmg5QxLk0K7n5BCsEU8D481y7XNEVkzyQGR3U64umVf0eME/tpW3papAZ+JwS01HtGOSbgA==
+"@types/ember__test-helpers@*", "@types/ember__test-helpers@^2.0.0":
+  version "2.6.1"
+  resolved "https://registry.npmjs.org/@types/ember__test-helpers/-/ember__test-helpers-2.6.1.tgz#2835bc60fd7daa93292d669fa9b61706836fe2e7"
+  integrity sha512-d2RShuBSaBzp04nt8ad+mNE1F6rbIcIIud8WFUVQqGSUGHuZQUq1051Jza12ksCUnXduyE/J9UDjyZvNKOHeBQ==
   dependencies:
-    "@types/ember" "*"
+    "@types/ember-resolver" "*"
     "@types/ember__application" "*"
     "@types/ember__error" "*"
+    "@types/ember__test-helpers" "*"
     "@types/htmlbars-inline-precompile" "*"
 
 "@types/ember__test@*":
@@ -7921,8 +7930,7 @@ eslint-module-utils@^2.6.1:
     pkg-dir "^2.0.0"
 
 "eslint-plugin-ember-data@link:./packages/unpublished-eslint-rules":
-  version "0.0.0"
-  uid ""
+  version "4.1.0-alpha.2"
 
 eslint-plugin-ember@^10.3.0, eslint-plugin-ember@^10.4.1:
   version "10.5.1"
